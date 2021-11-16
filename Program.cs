@@ -11,14 +11,19 @@ void Main()
     // allows a user to input a number and displays it back on the screen
     int secretNumber = 42;
     // define the secret number
-    if (answer == secretNumber)
+    for (int i = 0; i < 4; i++)
     {
-        Console.WriteLine("Correct guess!");
-        //displays if the user selects the correct number
-    }
-    else
-    {
-        Console.WriteLine("Guess again!");
-        //displays if the user selects the incorrect number
+        if (answer == secretNumber)
+        {
+            Console.WriteLine("Correct guess!");
+            //displays if the user selects the correct number
+            System.Environment.Exit(0);
+        }
+        else
+        {
+            Console.WriteLine("Guess again!");
+            //displays if the user selects the incorrect number
+            answer = int.Parse(Console.ReadLine());
+        }
     }
 }
