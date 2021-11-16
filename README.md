@@ -1,1 +1,3 @@
-# GuessingGame
+# Guessing Game
+
+### C# exercise 
